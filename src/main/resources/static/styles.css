@@ -1,0 +1,70 @@
+body, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.container-frame {
+    padding: 25px 50px 50px 50px;
+    border: 2px solid black;
+}
+
+.container {
+    margin: 50px;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    margin-left: 30px;
+}
+
+.label-line {
+    margin-right: 20px;
+}
+
+.button-submit {
+    background-color: black;
+    padding: 10px 50px;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+
+.button-submit:hover {
+    background-color: #badc58;
+
+}
+
+.field-open {
+    padding: 10px;
+    border: 2px solid black;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#field-msg {
+    height: 150px;
+}
+
+body {
+    position: absolute;
+}
+
+
+
+
+

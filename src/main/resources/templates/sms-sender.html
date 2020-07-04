@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sms Sender</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <link href="src/main/resources/static/styles.css" th:href="@{/styles.css}" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<div class="container" >
+
+    <img src="https://image.flaticon.com/icons/svg/561/561127.svg" height="60px" id="logo" />
+    <h1> WORLDWIDE SMS SENDER</h1>
+
+    <div class="container-frame">
+        <form action="#" th:action="@{/sender/sendingSms}" th:object="${sms}" method="post">
+            <label class="label-line">Phone Number: </label>
+            <br>
+           <input type="text" class="field-open" th:field="*{phoneNumber}"/>
+            <span class="error" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+        <br>
+            <label class="label-line">Message: </label>
+        <br>
+            <textarea class="field-open" id="field-msg" th:field ="*{message}" rows="5" cols="50" />
+            <span class="error" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></span>
+        <br>
+            <input type="submit" class="button-submit" th:value="Send" />
+        </form>
+    </div>
+</div>
+</body>
+</html>
