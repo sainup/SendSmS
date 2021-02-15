@@ -35,12 +35,14 @@ public class TwilioSmsSenderController {
 
     @PostMapping("/sendingSms")
     public String sendSms(@Valid @ModelAttribute("sms")SmsRequest smsRequest,
-                          BindingResult theBindingResult){
+                          BindingResult theBindingResult, Model theModel){
 
         if(theBindingResult.hasErrors()){
+           theModel.addAttribute("errorMsg","Error sending message!");
             return "sms-sender";
         }else {
             smsService.sendSms(smsRequest);
+            theModel.addAttribute("successMsg","Message sent successfully!");
             return "redirect:/sender/sendSms";
         }
 
