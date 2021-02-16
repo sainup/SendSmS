@@ -1,5 +1,6 @@
 package com.example.twiliodemo.DAO;
 
+import com.example.twiliodemo.Exception.SmsException;
 import com.example.twiliodemo.TwilioConfiguration.TwilioConfiguration;
 import com.twilio.exception.ApiException;
 import com.twilio.rest.api.v2010.account.Message;
@@ -44,7 +45,14 @@ public class SmsDAOImpl implements SmsDAO {
 
             session.saveOrUpdate(smsRequest);
         }catch (ApiException e){
-            System.out.println("Error Occurred : - " + e.getMessage());
+            if(e.getCode() == 21408){
+                throw new SmsException("Permission to send an SMS has not been enable for the number : " + smsRequest.getPhoneNumber());
+            }else{
+                System.out.println(e);
+                throw new SmsException("500 Internal Server Error. Please try again later");
+
+            }
+
         }
 
 
