@@ -31,7 +31,7 @@ and testing purposes.
 From your command line, first clone SendSms : 
 
 * git clone https://github.com/sainup/SendSmS.git or Download Zip from github
-* Make a schema named <Your choice> in MySql for the app
+* Make a schema named "your choice" in MySql for the app
   
 You need to open the project in your IDE and follow the steps below:
 
