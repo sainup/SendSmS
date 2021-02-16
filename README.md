@@ -6,19 +6,19 @@ MySql is used as a database for storage.
 The account used for the API is in trail period. So, It can only send message to the numbers that are verified
 in the account.
 
-##Table of contents
+## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 
-##Technologies
+## Technologies
 * Java 11
 * Spring boot 2.3.1.RELEASE
 * Apache Maven 3.6.3
 * Twilio 7.53.0
 * MySql
 
-##Setup
+## Setup
 These instructions will get you a copy of the project up and running on your local machine for development
 and testing purposes. 
 
