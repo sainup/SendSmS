@@ -31,12 +31,10 @@ and testing purposes.
 From your command line, first clone SendSms : 
 
 * git clone https://github.com/sainup/SendSmS.git or Download Zip from github
-* cd SendSms
-* mvn clean install
-
+* Make a schema named <Your choice> in MySql for the app
+  
 You need to open the project in your IDE and follow the steps below:
 
-* Make a schema named <Your choice> for the app
 * Go to src/main/resources and open application.properties
 * Insert your database url in spring.datasource.url
 * Insert your database username and password in spring.datasource.username and spring.datasource.password respectively
