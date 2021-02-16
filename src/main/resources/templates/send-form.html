@@ -11,31 +11,37 @@
     <link href="src/main/resources/static/styles.css" th:href="@{/styles.css}" rel="stylesheet">
 
 
-
 </head>
 
 <body>
-<div class="container" >
+<div class="container">
 
-    <img src="https://image.flaticon.com/icons/svg/561/561127.svg" height="60px" id="logo" />
+    <img src="https://image.flaticon.com/icons/svg/561/561127.svg" height="60px" id="logo"/>
     <h1> WORLDWIDE SMS SENDER</h1>
-
-    <div class="container-frame">
-        <form action="#" th:action="@{/sender/sendingSms}" th:object="${sms}" method="post">
+    <div class="note"><p> Note: Due to the account that I am using for this app is in Trial period. You can only
+        send message to verified user in my account.
+        <br>
+        To test the app you can try sending message to My number from portfolio or resume. Thank you!
+    </p>
+    </div>
+    <div class="container-frame ">
+        <form action="#" th:action="@{/sendSms}" th:object="${sms}" method="post">
             <label for="phoneNumber" class="label-line">Phone Number: </label>
             <br>
-           <input type="text" class="field-open" th:field="*{phoneNumber}" id="phoneNumber"/>
+            <input type="text" class="field-open" th:field="*{phoneNumber}" id="phoneNumber"/>
             <span class="error" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
-        <br>
+            <br>
             <label for="field-msg" class="label-line">Message: </label>
-        <br>
-            <textarea class="field-open" id="field-msg" th:field ="*{message}" rows="5" cols="50"/>
+            <br>
+            <textarea class="field-open" id="field-msg" th:field="*{message}" rows="5" cols="50"/>
             <span class="error" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></span>
-        <br>
+            <br>
 
-            <input type="submit" class="button-submit" th:value="Send" />
+            <input type="submit" class="button-submit" th:value="Send"/>
             <h2 th:text="${statusMessage}"></h2>
         </form>
+
+
     </div>
 </div>
 </body>

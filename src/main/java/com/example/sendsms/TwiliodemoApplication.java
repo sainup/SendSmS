@@ -1,4 +1,4 @@
-package com.example.twiliodemo;
+package com.example.sendsms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

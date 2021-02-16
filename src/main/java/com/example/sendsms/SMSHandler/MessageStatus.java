@@ -1,4 +1,4 @@
-package com.example.twiliodemo.SMSHandler;
+package com.example.sendsms.SMSHandler;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

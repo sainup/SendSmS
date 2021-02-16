@@ -3,6 +3,8 @@ body, input {
 }
 
 h1 {
+    margin-top: 0;
+    text-align: center;
     margin-bottom: 50px;
     font-size: 46px;
     font-weight: 600;
@@ -11,13 +13,24 @@ h1 {
     border-bottom: 2px solid black;
 }
 
+
+ .note p{
+    font-style: italic;
+    text-align: center;
+
+
+}
+
 .container-frame {
     padding: 25px 50px 50px 50px;
     border: 2px solid black;
+
 }
 
 .container {
     margin: 50px;
+
+
 }
 
 .error {

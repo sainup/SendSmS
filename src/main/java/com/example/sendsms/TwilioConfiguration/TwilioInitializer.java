@@ -1,18 +1,19 @@
-package com.example.twiliodemo.TwilioConfiguration;
+package com.example.sendsms.TwilioConfiguration;
 
 import com.twilio.Twilio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class TwilioIniatializer {
+public class TwilioInitializer {
 
     private final TwilioConfiguration twilioConfiguration;
 
     @Autowired
-    public TwilioIniatializer(TwilioConfiguration twilioConfiguration) {
+    public TwilioInitializer(TwilioConfiguration twilioConfiguration) {
         this.twilioConfiguration = twilioConfiguration;
 
+        //initiates twilio with accountSid and authToken
         Twilio.init(
                 twilioConfiguration.getAccountSid(),
                 twilioConfiguration.getAuthToken()

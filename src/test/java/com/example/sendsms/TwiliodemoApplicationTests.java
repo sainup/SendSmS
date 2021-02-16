@@ -1,4 +1,4 @@
-package com.example.twiliodemo;
+package com.example.sendsms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

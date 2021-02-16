@@ -1,4 +1,4 @@
-package com.example.twiliodemo.Exception;
+package com.example.sendsms.Exception;
 
 public class SmsException extends RuntimeException{
 

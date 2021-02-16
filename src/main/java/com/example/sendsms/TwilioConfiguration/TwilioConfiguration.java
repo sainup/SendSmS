@@ -1,4 +1,4 @@
-package com.example.twiliodemo.TwilioConfiguration;
+package com.example.sendsms.TwilioConfiguration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
