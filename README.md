@@ -6,7 +6,7 @@ MySql is used as a database for storage.
 The account used for the API is in trail period. So, It can only send message to the numbers that are verified
 in the account.
 
-See live demo <a href="http://ec2-54-93-117-77.eu-central-1.compute.amazonaws.com:8081/">here</a>.
+See live demo <a  href="http://ec2-54-93-117-77.eu-central-1.compute.amazonaws.com:8081/" target="_blank">here</a>.
 
 ## Table of contents
 * [Technologies](#technologies)
