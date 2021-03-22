@@ -8,7 +8,7 @@ in the account.
 
 See live demo <a  href="http://ec2-54-93-117-77.eu-central-1.compute.amazonaws.com:8081/" target="_blank">here</a>.
 
-[go](http://stackoverflow.com){:target="_blank"}
+
 ## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
